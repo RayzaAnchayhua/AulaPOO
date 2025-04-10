@@ -20,8 +20,8 @@ public class Exercicio1_2 {
     }
 
     public void mostrarDetalhes() {
-        System.out.println("Nome do Produto: " + this.nome);
-        System.out.println("Preço do Produto: " + this.preco);
-        System.out.println("Quantidade Estoque: " + this.qtdeEstoque);
+        System.out.println("•Nome do Produto: " + this.nome);
+        System.out.println("•Preço do Produto: " + this.preco);
+        System.out.println("•Quantidade Estoque: " + this.qtdeEstoque);
     }
 }
