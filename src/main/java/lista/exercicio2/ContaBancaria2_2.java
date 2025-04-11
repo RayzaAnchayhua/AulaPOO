@@ -25,7 +25,7 @@ public class ContaBancaria2_2 {
     }
 
     public String verificarSaldo() {
-        System.out.println("Saldo: R$" + this.saldo);
+        System.out.println("•Saldo: R$" + this.saldo);
         return "";
     }
 }

@@ -16,9 +16,9 @@ public class Aluno3_2 {
     public String toString() {
         System.out.println("Nome do Aluno: "+nome);
         System.out.println("RA do Aluno: "+RA);
-        System.out.println("Curso do Aluno: "+curso);
-        System.out.println("Universidade"+curso.universidade);
-        return nome + " " + RA + " " + curso;
+        System.out.println("Universidade: "+curso.universidade);
+        System.out.println("Curso do Aluno: "+curso.curso);
+        return "";
     }
 
 }
