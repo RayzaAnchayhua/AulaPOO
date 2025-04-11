@@ -5,7 +5,7 @@ public class TesteListaExericicio2 {
         //Exercicio1
         System.out.println("---------------------");
         System.out.println("Exercicio 1:");
-        Exercicio1_2 e = new Exercicio1_2("Metamorfose", 55.92, 14);
+        Exercicio1_2 e = new Exercicio1_2("Star Wars Livro", 55.92, 14);
         e.adicionar(9);
         e.remover(5);
         e.mostrarDetalhes();
