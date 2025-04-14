@@ -4,7 +4,7 @@ public class Aluno3_2 {
 
     String nome;
     String RA;
-    Curso3_2 curso;
+    Curso3_2 curso; //Objeto - uma forma de relação entre classes
 
     public Aluno3_2(String nome, String RA, Curso3_2 curso) {
         this.nome = nome;
