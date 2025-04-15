@@ -6,7 +6,8 @@ public class Vestuario extends Produto {
     private String cor;
 
     //Constutores
-    public Vestuario() {
+    public Vestuario(String nome, double preco, String descricao) {
+     super(nome,preco,descricao);
     }
 
     public Vestuario(String marca, String tamanho, String cor) {
