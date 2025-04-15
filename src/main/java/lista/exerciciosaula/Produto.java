@@ -44,7 +44,7 @@ public class Produto {
     public void exibirDetalhes(){
      System.out.println("Nome do Produto:" + this.nome +
                         "Preço do Produto:" +this.preco +
-                        "Descrição do Produto:" + this.produto );
+                        "Descrição do Produto:" + this.descricao );
 
     }
 }
