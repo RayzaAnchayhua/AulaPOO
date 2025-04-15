@@ -5,11 +5,12 @@ public class Livros extends Produto{
     private int numPaginas;
 
     //Construtores
-    public Livros() {
+    public Livros(String nome, double preco, String descricao) {
+    super(nome, preco, descricao);
     }
 
     public Livros(int numPaginas, String autor) {
-        super();
+        super(nome, preco, descricao);
         this.numPaginas = numPaginas;
         this.autor = autor;
     }
