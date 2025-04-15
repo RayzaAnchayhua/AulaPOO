@@ -35,6 +35,7 @@ public class Livros extends Produto{
     //Metodos
     @Override
     public void exibirDetalhes(){
+        super.exibirDetalhes(); //Sobre escrita + Herança
         System.out.println("Autor:" + this.autor +
                            "Quantidade de Paginas:" + this.numPaginas);
     }
