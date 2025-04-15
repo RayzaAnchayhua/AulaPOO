@@ -5,12 +5,12 @@ public class Eletronicos extends Produto{
     private String modelo;
 
     //Construtores
-    public Eletronicos() {
-
+    public Eletronicos(String nome, double preco, String descricao) {
+    super(nome, double, descricao);
     }
 
     public Eletronicos(String marca, String modelo) {
-        super();
+        super(nome, preco, descricao);
         this.marca = marca;
         this.modelo = modelo;
     }
