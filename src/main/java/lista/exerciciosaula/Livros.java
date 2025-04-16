@@ -5,12 +5,12 @@ public class Livros extends Produto{
     private int numPaginas;
 
     //Construtores
-    public Livros(String nome, double preco, String descricao) {
-    super(nome, preco, descricao);
+    public Livros(String nome, double preco, String descricao, Vendedor vendedor) {
+        super(nome, preco, descricao, vendedor);
     }
 
-    public Livros(int numPaginas, String autor) {
-        super(nome, preco, descricao);
+    public Livros(int numPaginas, String autor, String nome, double preco, String descricao, Vendedor vendedor) {
+        super(nome, preco, descricao, vendedor);
         this.numPaginas = numPaginas;
         this.autor = autor;
     }
@@ -36,7 +36,8 @@ public class Livros extends Produto{
     @Override
     public void exibirDetalhes(){
         super.exibirDetalhes(); //Sobre escrita + Herança
-        System.out.println("Autor:" + this.autor +
-                           "Quantidade de Paginas:" + this.numPaginas);
+        System.out.println("----------------------------------" +
+                           "\n•Autor: " + this.autor +
+                           "\n•Quant. Páginas: " +this.numPaginas);
     }
 }
