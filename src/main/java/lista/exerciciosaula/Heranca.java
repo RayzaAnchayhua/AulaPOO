@@ -4,15 +4,26 @@ import java.util.ArrayList;
 
 public class Heranca {
     public static void main(String[] args) {
-        Vendedor vendedor1 = new Vendedor();
-        Vendedor vendedor2 = new Vendedor();
-        Vendedor vendedor3 = new Vendedor();
+
+        ArrayList<Produto> lista = new ArrayList<>();
+        Vendedor vendedor1 = new Vendedor("123","Leonardo","Davince@Leonardo.com", lista);
+
+        Eletronicos elet = new Eletronicos("Samsung","S21","Smartphone", 1999, "8GB Ram - 256 ROM",vendedor1);
+        //Vestuario vest = new Vestuario("Blusa Olivia Rodrigo", 60, "Blusa OR", vendedor1);
+        Livros liv = new Livros("Carlos Drumont",100,"A viação é linda", vendedor1);
+
+        vendedor1.inserir(elet);
+        vendedor1.inserir(liv);
 
 
-        Eletronicos elet = new Eletronicos("Notebook",3.500,"Notebook Asus",vendedor1);
-        Vestuario vest = new Vestuario("Blusa Olivia Rodrigo", 60, "Blusa OR", vendedor2);
-        Livros liv = new Livros("Sol da Meia Noite", 60, "Livro", vendedor3);
+        vendedor1.listar();
 
+        vendedor1.removerlista();
+
+        vendedor1.removerItemlista("Smartphone");
+        System.out.printf(" --- \n");
+        vendedor1.listar();
+        /*
             ArrayList<Produto> listaProdutos = new ArrayList();
 
             listaProdutos.add(elet);
@@ -51,5 +62,7 @@ public class Heranca {
             elet.exibirDetalhes();
             vest.exibirDetalhes();
             liv.exibirDetalhes();
+
+         */
     }
 }
